@@ -1,0 +1,195 @@
+body{
+    font-size: 16px;
+}
+main{
+    width: 100%;
+    height: 1900px;
+    background-color: var(--primary-color);
+}
+.sidebar{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 900px auto;
+}
+.sidebar-link{
+    flex-direction: column;
+    align-self: flex-start;
+    width: 300px;
+    height: 1900px;
+    border-right: 3px solid  #1F2322;
+    padding-top: 30px;
+}
+.sidebar-link h1{
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sidebar-link ul {
+    list-style: none;
+    padding-top: 30px;
+
+}
+.sidebar-link  li {
+    margin: 30px 50px;
+}
+.sidebar-doc{
+    flex-direction: column;
+    align-content: center;
+}
+.instrucao-container{
+    width: 600px;
+    height: 200px;
+    line-height: 32px;
+    margin: 30px 100px;
+}
+.instrucao-container h1{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.instrucao-container p {
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+.instrucaojogo{
+    width: 700px;
+    height: 980px;
+    line-height: 32px;
+    margin: 30px 100px;
+}
+.instrucaojogo h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+.span-controle{
+    line-height: 40px;
+    margin: 20px 0px ;
+}
+.span-facil{
+    display: inline-block;
+    margin: 10px 0px ;
+}
+.span-medio{
+    display: inline-block;
+    margin: 10px 0px ;
+}
+.span-dificil{
+    display: inline-block;
+    margin: 10px 0px;
+}
+.instrucaojogo h3{
+    margin: 30px 0px 30px 0px;
+}
+
+/* DESIGN RESPONSIVO DA DOCUMENTAÇÃO*/
+
+@media (max-width:600px){
+    .logo{
+        font-size: 1.8rem;
+    }
+    main{
+        width: 100%;
+        height: 1900px;
+    }
+    .sidebar{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 300px auto;
+        gap: 10px;
+    }
+    .sidebar-link{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        border: none;
+    }
+    .sidebar-link h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .sidebar-doc{
+        width: 500px;
+        height: 900px;
+    }
+    .sidebar-doc h1{
+        font-size: 1.5rem;
+    }
+    .sidebar-doc p{
+        font-size: 1rem;
+    }
+    .instrucao-container{
+        width: 500px;
+        margin: 30px 10px 30px 8px;
+    }
+    .instrucaojogo{
+        width: 500px;
+        margin: 30px 10px 30px 10px;
+    }
+}
+
+@media (min-width:600px) and (max-width: 800px){
+    main{
+        width: 100%;
+        height: 1900px;
+    }
+    .sidebar{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 300px auto;
+        gap: 10px;
+    }
+    .sidebar-link{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        border: none;
+    }
+    .sidebar-link h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .sidebar-doc{
+        width: 500px;
+        height: 900px;
+    }
+    .sidebar-doc h1{
+        font-size: 1.5rem;
+    }
+    .sidebar-doc p{
+        font-size: 1rem;
+    }
+    .instrucao-container{
+        width: 500px;
+        margin: 30px 10px 30px 25px;
+    }
+    .instrucaojogo{
+        width: 500px;
+        margin: 30px 10px 30px 25px;
+    }
+}
+
+@media (min-width: 810px) and (max-width:900px){
+    main{
+        width: 100%;
+        height: 1900px;
+    }
+    .sidebar{
+        grid-template-columns: 230px auto;
+    }
+    .sidebar-link{
+        width: 230px;
+        border: 2px solid #1F2322;
+    }
+    .sidebar-link h1{
+        font-size: 1.5rem;
+    }
+    .instrucao-container{
+        margin: 30px 10px 30px 25px;
+    }
+    .instrucaojogo{
+        margin: 30px 10px 30px 25px;
+        width: 600px;
+    }
+}

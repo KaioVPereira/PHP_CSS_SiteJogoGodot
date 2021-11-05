@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #343837;
+    color: white;
+    font-family:'nter',sans-serif ;
+}
+.btn-back-login{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: #0F9B8E;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+.container-form{
+    max-width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 30px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+::-webkit-input-placeholder{
+    font-size: 1.1rem ;
+    color: white;
+    padding-left: 10px;
+}
+input[type=submit]{
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin: 30px 100px 10px 150px;
+    background-color: #0F9B8E;
+    border: none;
+}
+h1{
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    font-size: 1.9rem;
+}
+h3{
+    text-align: center;
+    margin: 40px 160px 40px 0px;
+    font-size: 1.1rem;
+}
+/*DESIGN RESPONSIVO PARA PAGINA DE ESQUECEU A SENHA*/
+
+@media (max-width: 600px){
+    input[type= submit]{
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+        margin: 40px 30px 0px 150px;
+    }
+    .btn-back-login{
+        width: 130px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.3rem;
+        margin-top: 40px ;
+    }
+    h3{
+        font-size: 1rem;
+        margin: 40px 80px 40px 0px;
+    }
+}

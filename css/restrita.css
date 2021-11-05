@@ -1,0 +1,154 @@
+:root{
+    --primary-color: #343837;
+    --font-color : white;
+    --second-color :  #1F2322;
+    --style-color: #0F9B8E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    font-family: 'Inter',sans-serif;
+}
+.icon{
+    display: none;
+}
+body{
+    font-size: 16px;
+}
+a,ul{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: 300px 900px;
+}
+.logo{
+    font-size: 1.3rem;
+    margin: 30px 0px 30px 30px;
+}
+.logo:hover{
+    text-decoration: none;
+    color: var(--style-color);
+}
+a:hover{
+    text-decoration: none;
+    color: var(--style-color);
+}
+.menu-container{
+    padding-top: 30px;
+    width: 300px;
+    height: 1300px;
+    border-right: 2px solid #1F2322;
+}
+.header ul {
+    margin-top: 30px;
+}
+.header ul li {
+    padding: 10px;
+}
+.dashboard h1{
+    color:white;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+.header-menu{
+    width: 100%;
+    height: 60px;
+    background-color: var(--second-color);
+    padding-top: 30px;
+}
+.historico{
+    width: 700px;
+    height: 400px;
+    margin: 50px 190px 50px 140px;
+    border: 2px solid var(--second-color);
+}
+
+.historico ul {
+    font-size: 1.2rem;
+}
+.historico li{
+    margin: 15px 0px 20px 0px;
+}
+.ranking{
+    width: 700px;
+    height: 400px;
+    margin: 50px 190px 50px 140px;
+    border: 2px solid var(--second-color);
+}
+.ranking ul {
+    font-size: 1.2rem;
+}
+
+.ranking li{
+    margin: 20px 0px 20px 0px;
+}
+.dashboard h1{
+    font-size: 1.4rem;
+    margin-left: 30px;
+}
+.user-name{
+    display: flex;
+    justify-content: space-between;
+}
+.user-name a{
+    margin-top: 20px;
+    background-color: var(--style-color);
+    width: 100px;
+    height: 50px;
+    text-align:center;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 600px){
+    main{
+        grid-template-columns: 150px 400px;
+    }
+    .menu-container{
+        width: 130px;
+    }
+    .header ul{
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    .logo{
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+    .historico{
+        padding: 0px;
+        margin-left: 10px;
+        width: 300px;
+        height: 400px;
+        font-size: 1rem;
+    }
+    .ranking{
+        padding: 0px;
+        margin-left: 10px;
+        width: 300px;
+        height: 400px;
+        font-size: 1rem;
+    }
+    .user-name{
+        width: 320px;
+    }
+    .user-name h1{
+        margin-left: 5px;
+        font-size: 1.2rem;
+    }
+    .user-name a {
+        width: 80px;
+        height: 40px;
+        font-size: 1rem;
+        margin-top: 30px;
+        padding-top: 10px;
+    }
+}

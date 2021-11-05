@@ -1,0 +1,133 @@
+:root{
+    --primary-color: #343837;
+    --font-color : white;
+    --second-color :  #1F2322;
+    --style-color: #0F9B8E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    font-family: 'Inter',sans-serif;
+    color: white;
+}
+body{
+    font-size: 16px;
+}
+a,ul{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: 300px 900px;
+}
+.logo{
+    font-size: 1.3rem;
+    margin: 30px 0px 30px 30px;
+}
+.logo:hover{
+    text-decoration: none;
+    color: var(--style-color);
+}
+a:hover{
+    text-decoration: none;
+    color: var(--style-color);
+}
+.menu-container{
+    padding-top: 30px;
+    width: 300px;
+    height: 1300px;
+    border-right: 2px solid #1F2322;
+}
+.header ul {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.header ul li {
+    padding: 10px;
+}
+
+.perfil{
+    width: 900px;
+    height: 600px;
+    margin: 100px 30px 10px 30px;
+}
+.perfil h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid white;
+    margin: 20px 0px 20px 0px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 10px;
+}
+::-webkit-input-placeholder{
+    color: white;
+    padding-left: 10px;
+}
+input[type=submit]{
+    width: 150px;
+    height: 50px;
+    background-color: var(--style-color);
+    margin: 30px 100px 0px 330px;
+    border: none;
+}
+@media(max-width:600px){
+    main{
+        grid-template-columns: 150px 600px;
+    }
+    .menu-container{
+        width:  130px;
+    }
+    .header ul{
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+    .perfil{
+        width: 300px;
+    }
+    input{
+        font-size: 1rem;
+    }
+    input[type=submit]{
+        width: 100px;
+        height: 50px;
+        background-color: var(--style-color);
+        margin: 30px 100px 0px 100px;
+        border: none;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px){
+    main{
+        grid-template-columns: 200px 500px;
+    }
+    .menu-container{
+        width: 200px;
+    }
+    .perfil{
+        width: 490px;
+    }
+    input[type=submit]{
+        width: 130px;
+        height: 50px;
+        background-color: var(--style-color);
+        margin: 30px 100px 0px 190px;
+        border: none;
+        font-size: 1rem;
+    }
+}

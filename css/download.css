@@ -1,0 +1,90 @@
+:root{
+    --primary-color: #343837;
+    --font-color : white;
+    --second-color :  #1F2322;
+    --style-color: #0F9B8E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    font-family: 'Inter',sans-serif;
+    color: white;
+}
+body{
+    font-size: 16px;
+}
+a,ul{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: 300px 900px;
+}
+.logo{
+    font-size: 1.3rem;
+    margin: 30px 0px 30px 30px;
+}
+.logo:hover{
+    text-decoration: none;
+    color: var(--style-color);
+}
+a:hover{
+    text-decoration: none;
+    color: var(--style-color);
+}
+.menu-container{
+    padding-top: 30px;
+    width: 300px;
+    height: 1300px;
+    border-right: 2px solid #1F2322;
+}
+.header ul {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header ul li {
+    padding: 10px;
+}
+.info h1{
+    font-size: 1.5rem;
+    margin: 30px 0px 30px 30px;
+}
+.info p{
+    margin: 30px 0px 0px 30px;
+    font-size: 1.2rem;
+}
+.click{
+    color: var(--style-color);
+}
+
+/*DESIGN RESPONSIVO DO DOWNLOAD*/
+
+
+@media (max-width:600px){
+    main{
+        grid-template-columns: 150px 300px;
+    }
+    .menu-container{
+        width: 130px;
+        border: 2px solid var(--second-color);
+    }
+    .header ul {
+        margin-left:10px;
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+    .info h1{
+        font-size: 1.3rem;
+    }
+    .info p{
+        font-size: 1rem;
+    }
+}
